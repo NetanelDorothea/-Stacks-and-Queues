@@ -1,0 +1,8 @@
+Why is a stack the right choice for undo/redo?
+Because for the undo/redo the most recent action should be handled first. For the undo/redo we want to "backtrack," and "reverse" operations. We now had to return the most recent value to undo or redo.
+
+Why is a queue better suited for the help desk?
+Because for the helpdesk we had to help the first customer in line. For the helpesk queue we want to hellp the customers in the order they arrive, like a line at a store.
+
+How do your implementations differ from Python’s built-in lists?
+Instead of lists that include dynamic arrays, we can now easily go through every node and modify them efficiently without shifting other items in memory. If you want to change something in a list, specifically remove and/or insert items in the middle, it could make the application run slow since every item has to move. With nodes each element is stored in its own node conected to the next point, so modifications can be doen without moving other elements for more eficient and flexible memory usage.
